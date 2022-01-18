@@ -6,7 +6,7 @@ const open = require('open')
 const app = express()
 app.use(compression())
 // app.use(history())
-app.use(express.static(__dirname + '/static'))
+app.use(express.static(__dirname + '/dist'))
 
 open('http://127.0.0.1:8888')
 app.listen(8888, (err) => {
